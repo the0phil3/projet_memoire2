@@ -103,9 +103,9 @@ def extract_certificat(text):
          for word in text.split():
               word_stripped = re.sub(r'[^\w\s]', '', word)
               if any(word_stripped.startswith(acc_word) for acc_word in accorded_words):
-                    return "Accordé"
+                    return "accordé"
               elif word_stripped in refused_words:
-                    return "Refusé"
+                    return "refusé"
     return None
 
 
@@ -118,17 +118,17 @@ def extract_decision(text, CONSTANT):
                          count[keyword] += 1
      max_count = max(count.values())
      if max_count == 0 and ('bon' in text.split()):
-          return 'Bon pour le service armé'
+          return 'bon pour le service armé'
      percentage_digits = sum(c.isdigit() for c in text.strip()) / max(len(text.strip()), 1)
      threshold = 0.4
      if max_count == 0 and percentage_digits > threshold and '1' in text.strip():
-        return 'Bon pour le service armé'
+        return 'bon pour le service armé'
      if max_count == 0 and percentage_digits > threshold and '2' in text.strip():
-        return 'Bon pour le service auxiliaire'
+        return 'bon pour le service auxiliaire'
      if max_count == 0 and percentage_digits > threshold and '3' in text.strip():
-        return 'Engagé volontaire'
+        return 'engagé volontaire'
      if max_count == 0 and percentage_digits > threshold and '5' in text.strip():
-        return 'Ajourné'
+        return 'ajourné'
      max_keys = [key for key, value in count.items() if value == max_count]
      if len(max_keys) == 1:
           return max_keys[0]

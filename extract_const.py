@@ -1,12 +1,12 @@
 #This python file contains all the different constants necessary for text extraction
 
 DECISION = {
-    "Bon pour le service armé": ["arme", "armé", 'Bon', "Propre", 'propre'],
-    "Exempté" : ["dispense", "exempte", "dispensé", "exempté", "dipensé", "dipense"],
-    "Ajourné" : ["ajourne", "ajourné", "sejourne", "sejourné", "différé", 'differé'],
-    "Bon absent" : ["absent"],
-    "Bon pour le service auxiliaire" : ["auxil", "auxiliaire", "faible", 'faiblesse'],
-    "Engagé volontaire" : ["engage", "volontaire", "engagé"]
+    "bon pour le service armé": ["arme", "armé", 'Bon', "Propre", 'propre'],
+    "exempté" : ["dispense", "exempte", "dispensé", "exempté", "dipensé", "dipense"],
+    "ajourné" : ["ajourne", "ajourné", "sejourne", "sejourné", "différé", 'differé'],
+    "bon absent" : ["absent"],
+    "bon pour le service auxiliaire" : ["auxil", "auxiliaire", "faible", 'faiblesse'],
+    "engagé volontaire" : ["engage", "volontaire", "engagé"]
 }
 
 GRADE = {
@@ -26,26 +26,26 @@ GRADE = {
 }
 
 AFFECTATION = {
-    "Infanterie": ["infa", "chasseurs a pied", "chasseur a pied", " ri ", "infanterie",
+    "infanterie": ["infa", "chasseurs a pied", "chasseur a pied", " ri ", "infanterie",
                    "infie", "infi", "infe", "ifie", "interie"],
-    "Troupes coloniales" : ["tirail", "goum", "afrique", "spahis", "coloniaux",
+    "troupes coloniales" : ["tirail", "goum", "afrique", "spahis", "coloniaux",
                             "zouaves", "etranger", "tirailleurs", "colo", "d'af"],
-    "Aviation" : ["avia", "aero"],
-	'Armée de la mer' : ['marine', 'navale', 'flotte', 'equipages'],
-    "Train" : ["train", "auto"],
-    "Genie" : ["genie"],
-    "Cavalerie" : ["dragons", "cuirassiers", "chasseurs", "hussard", "huss", "chasseurs a cheval",
+    "aviation" : ["avia", "aero"],
+	'armée de la mer' : ['marine', 'navale', 'flotte', 'equipages'],
+    "train" : ["train", "auto"],
+    "génie" : ["genie"],
+    "cavalerie" : ["dragons", "cuirassiers", "chasseurs", "hussard", "huss", "chasseurs a cheval",
                    "chas a cheval", "chasseur a cheval", "drag"],
-    "Artillerie" : ["art", "ouvriers dart", "ouv art", "ouv d art",
+    "artillerie" : ["art", "ouvriers dart", "ouv art", "ouv d art",
                     "boa", "alc", "r a ", "dartillerie" , "legere portee"],
-    "Corps medical" : ["infirmier", 'santé', 'infiriniers', "d'infirère", "d'infirimiers"],
-    "Service auxiliaire" : ["aux", "etat major", "coa", "sem", "em" ],
-    "Affectations spéciales" : ["special", "usine"]
+    "corps medical" : ["infirmier", 'santé', 'infiriniers', "d'infirère", "d'infirimiers"],
+    "service auxiliaire" : ["aux", "etat major", "coa", "sem", "em" ],
+    "affectations spéciales" : ["special", "usine"]
 }
 
 grade_norme_dico = {
         1: "2e classe",
-        2: "1er classe",
+        2: "1e classe",
         3: "caporal",
         4: "fourrier",
         5: "sergent",
