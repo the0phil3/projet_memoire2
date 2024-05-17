@@ -1,0 +1,16 @@
+# Ignore .DS_Store files
+.DS_Store
+
+# Ignore .ipynb_checkpoints directory
+.ipynb_checkpoints/
+
+__pycache__/
+
+data/primary/raw/
+
+# Ignore excel files that too much space
+.xlsx
+
+
+# Ignore vscode files
+.vscode
